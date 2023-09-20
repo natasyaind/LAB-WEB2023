@@ -1,0 +1,153 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Style navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999; /* agar navbar tetap berada di atas */
+    display: flex;
+    background-color: rgb(255, 105, 46);
+    justify-content: center;
+}
+
+/* navbar */
+.navbar a {
+    color: white; 
+    padding: 18px 30px; /* Padding atas dan bawah 18px, padding kiri dan kanan 30px */
+    text-decoration: none; /* Hapus garis bawah teksnya */
+    font-size: 18px;
+}
+
+/* navbar saat dihover */
+.navbar a:hover {
+    background-color: rgba(185, 111, 14, 0.932); /* Warna latar belakang saat dihover */
+}
+
+.paragraf {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px 300px;
+}
+
+.paragraf p {
+    text-align: justify;
+    font-weight: 300;
+    font-size: medium;
+}
+
+.image-container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery1 {
+    width: 25%;
+    margin: 5px;
+    height: auto;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.image-container .gallery1 img {
+    height: 100%;
+    width: 100%;
+    transition: all 1.0s;
+}
+
+.gallery1:hover img {
+    transform: scale(1.1);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(8, 36, 9);
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 100px;
+}
+
+.footer-logo img {
+    max-width: 7%;
+}
+
+.footer-logo p {
+    color: white;
+}
+
+.footer-contact p {
+    color: white;
+    font-size: small;
+    white-space: nowrap; /* Mencegah pemisahan kata */
+}
+
+
+/* for responsive web */
+
+@media (max-width: 1220px) {
+    .paragraf {
+        padding: 20px 200px; 
+    }
+
+    .navbar a {
+        padding: 18px 30px; 
+    }
+
+    .gallery1 {
+        width: 25%;
+        height: auto;
+    }
+
+    .footer {
+        padding: 10px 100px; 
+    }
+}
+
+@media (max-width: 1007px) {
+    .paragraf {
+        padding: 50px 100px; 
+    }
+
+    .navbar a {
+        padding: 18px 30px; 
+    }
+
+    .gallery1 {
+        width: 40%;
+        height: auto;
+    }
+
+    .footer {
+        padding: 10px 50px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .paragraf {
+        padding: 50px 50px;
+    }
+
+    .navbar a {
+        padding: 18px 30px; 
+    }
+
+    .gallery1 {
+        width: 85%;
+        height: auto;
+    }
+
+    .footer {
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
