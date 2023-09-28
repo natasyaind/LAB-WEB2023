@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page BOOTSTRAP</title>
+
+
+    <!-- link ke css bootsrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- css eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-black fixed-top ">
+        <div class="container">
+          <a class="navbar-brand text-white" href="#"><strong>IPHONE SHOP</strong></a>
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto gap-4">
+              <a class="nav-link active text-white" aria-current="page" href="#carouselExample">Home</a>
+              <a class="nav-link text-white" href="#products">Products</a>
+              <a class="nav-link text-white" href="#contact">Contact Us</a>
+              <a class="nav-item btn btn-primary" href="#">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- akhir navbar -->
+
+    <!-- carousel -->
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/iph15.jpg" class="d-block w-100" alt="15">
+              </div>
+              <div class="carousel-item">
+                <img src="iphh15.jpg" class="d-block w-100" alt="15">
+              </div>
+            </div>
+            <button class="carousel-control-prev  carousel-dark " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next  carousel-dark " type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    <!-- akhir carousel -->
+
+
+    <!-- products -->
+        <div id="products" class="container">
+            <div class="row products bg-body-secondary bg-gradient rounded-5">
+                <div class="col-lg-6">
+                    <img src="/iph14pro.png" alt="14pro" class="img-fluid">
+                </div>
+                <div class="col-lg-5">
+                    <h3>iPhone 14 Pro</h3>
+                    <p>Semakin Pro.</p>
+                    <button type="button" class="btn btn-outline-dark btn-lg">Beli Sekarang</button>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="/iph14.png" alt="14" class="img-fluid">
+                </div>
+                <div class="col-lg-5">
+                    <h3>iPhone 14</h3>
+                    <p>Penuh Keajaiban.</p>
+                    <button type="button" class="btn btn-outline-dark btn-lg">Beli Sekarang</button>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="/iph13pro.png" alt="13pro" class="img-fluid">
+                </div>
+                <div class="col-lg-5">
+                    <h3>iPhone 13 Pro</h3>
+                    <p>Ponsel. Paling. Pro</p>
+                    <button type="button" class="btn btn-outline-dark btn-lg">Beli Sekarang</button>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="/iph13.png" alt="13" class="img-fluid">
+                </div>
+                <div class="col-lg-5">
+                    <h3>iPhone 13</h3>
+                    <p>Kekuatan Super Baru di tangan anda.</p>
+                    <button type="button" class="btn btn-outline-dark btn-lg">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    <!-- akhir products -->
+
+    <!-- contact us -->
+    <section id="contact" class="contact-us">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h1>Contact Us</h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center ">
+            <div class="col-lg-6 justify-content-center d-flex">
+                <figure class="figure">
+                    <img src="/winter.jpg" class="figure-img img-fluid rounded-circle" alt="person 1">
+                </figure>
+                <figure class="figure">
+                    <img src="/karina.png" class="figure-img img-fluid rounded-circle utama" alt="person 2">
+                    <figcaption class="figure-caption">
+                        <h5>Karina</h5>
+                        <p>karina@gmail.com</p>
+                    </figcaption>
+                  </figure>
+                  <figure class="figure">
+                    <img src="/ningning.jpg" class="figure-img img-fluid rounded-circle" alt="person 3">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!-- akhir contact us -->
+
+    <!-- footer -->
+    <div class="row footer">
+        <div class="col text-center">
+            <p>2023 All Rights Reserved by Natasya Indriani.</p>
+        </div>
+    </div>
+    <!-- akhir footer -->
+
+    <!-- link ke js bootsrap -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

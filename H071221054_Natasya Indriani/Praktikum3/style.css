@@ -1,0 +1,101 @@
+.navbar-brand {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+
+/* .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+} */
+
+
+/* products */
+.products {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.col-lg-5 {
+    margin-top: -150px;
+}
+
+.products h3 {
+    font-size: 52px;
+    font-weight: 100;
+    margin-top: 150px;
+}
+
+.products p {
+    font-size: 18px;
+    color: #acacac;
+    font-weight: 100;
+}
+
+.contact-us {
+    margin-top: 150px;
+}
+
+.contact-us h1 {
+    text-align: center;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.contact-us figure img {
+    width: 60px;
+    margin: 20px 15px 10px;
+    opacity: 0.6;
+}
+
+.contact-us figure img.utama {
+    width: 100px;
+    opacity: 1;
+    margin-top: 5px;
+}
+
+.contact-us figure h5 {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: #1C2C5D;
+    text-align: center;
+}
+
+
+.contact-us figure p {
+    font-size: 12px;
+    color: #acacac;
+    text-align: center;
+    margin-top: -5px;
+}
+
+/* footer */
+.footer {
+    margin-top: 100px;
+}
+.footer p {
+    color: #acacac;
+    font-size: 12px;
+}
+
+/* responsive */
+/* desktop version */
+@media (min-width: 992px) {
+    .products {
+        text-align: left;
+    }
+
+    .col-lg-5 {
+        margin-top: 5px;
+    }
+
+    .contact-us h1 {
+        font-size: 40px;
+    }
+
+    .footer p {
+        font-size: 15px;
+    }
+}
