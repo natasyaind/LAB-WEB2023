@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum 4 JavaScript</title>
+</head>
+<body>
+    <script>
+    // NO 3
+    let kata = prompt('Masukkan kata: ');
+
+    function cekPalindrom(kata) {
+    // untuk hapus spasi dan ubah huruf menjadi huruf kecil
+    kata = kata.toLowerCase().replace(/\s/g, '');
+
+    // untuk hitung panjang kata
+    let panjangKata = kata.length;
+
+    // periksa kata apakah dia palindrom/bukan pake looping
+    for (let i = 0; i < panjangKata / 2; i++) {
+        if (kata[i] !== kata[panjangKata - 1 - i]) {
+        return false;
+        }
+    }
+    return true;
+    }
+
+    // malam
+    alert(cekPalindrom(kata));
+
+
+    </script>
+</body>
+</html>

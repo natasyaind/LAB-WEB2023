@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum 4 JavaScript</title>
+</head>
+<body>
+    <script>
+    // NO 4
+
+    function inputAngka(n) {
+        let angka = [];
+        for (let i = 0; i < n; i++) {
+            let input = parseInt(prompt(`Masukkan angka ke-${i + 1}:`));
+            angka.push(input);
+        }
+        return angka;
+    }
+
+    function urutkanAngka(angka) {
+        for (let i = 0; i < angka.length - 1; i++) {
+            for (let j = 0; j < angka.length - i - 1; j++) {
+                if (angka[j] > angka[j + 1]) {
+                // Tukar angka[j] dengan angka[j + 1]
+                    let temp = angka[j];
+                    angka[j] = angka[j + 1];
+                    angka[j + 1] = temp;
+                }
+            }
+        }
+    }
+
+    let n = parseInt(prompt("Masukkan jumlah angka (n) :"));
+    let angka = inputAngka(n);
+    urutkanAngka(angka);
+
+    alert("Angka yang diurutkan : " + angka.join(" "));
+
+    </script>
+</body>
+</html>

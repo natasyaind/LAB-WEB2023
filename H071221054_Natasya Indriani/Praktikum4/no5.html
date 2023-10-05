@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum 4 JavaScript</title>
+</head>
+<body>
+    <script>
+    // NO 5
+    // Fungsi untuk mengonversi angka desimal ke biner
+    function decimalToBinary(decimal) {
+    // Gunakan metode toString() dengan basis 2 untuk mengonversi angka
+    return decimal.toString(2);
+    }
+
+    // Meminta input dari pengguna
+    const input = parseInt(prompt("Masukkan angka (base-10):"));
+
+    // Memanggil fungsi untuk mengonversi dan mencetak hasilnya
+    if (!isNaN(input)) {
+    let binary = decimalToBinary(input);
+    alert(`Angka biner dari ${input} adalah ${binary}`);
+    } else {
+    alert("Tidak Valid. Harap Masukkan Angka.");
+    }
+    // Fungsi untuk mengonversi angka desimal ke biner
+
+
+    </script>
+</body>
+</html>

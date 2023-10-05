@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum 4 JavaScript</title>
+</head>
+<body>
+  <script>
+    // NO 2
+    var alfabet = 'abcdefghijklmnopqrstuvwxyz'
+    var text = null
+    var x = 'a'
+
+    while (isNaN(x) || x == null) {
+      while (text == null) {
+        text = prompt('Masukkan kata yang ingin dienkripsi : ')
+      }
+        x = prompt('Masukkan jumlah pergeseran kata : ')
+    }
+
+    text = text.toLowerCase()
+    var result = ''
+
+    // perulangan utk pergeran kata
+    for (let i = 0; i < text.length; i++) {
+      if (text[i] == ' ') {
+        result = result + ' '
+      } else {
+        var posisi = (alfabet.search(text[i]) + parseInt(x)) % alfabet.length
+        result = result + alfabet[posisi]
+      }
+    }
+
+    //indonesia
+    // i itu pada alfabet berada pada index ke 8, terus mau digeser sebanyak 13x. berarti dari i dihitung 0 sampe
+    // dia berhenti di v (inimi kata enkripsinya) dst...
+    alert(result)
+  </script>
+</body>
+</html>
