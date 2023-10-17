@@ -1,0 +1,91 @@
+body {
+    background-image: url(Images/table/table.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    color: white;
+    background-size: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+  
+h1, h3, p {
+    font-size: 20px;
+}
+  
+container{
+    align-items: justify;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 200px;
+}
+  
+.card1 {
+    display: flex;
+    flex-direction: column;
+}
+  
+.card2 {
+    display: flex;
+    flex-direction: column;
+}
+  
+.bot-cards img,
+.my-cards img {
+    width: 150px;
+    margin: 1px;
+}
+  
+input {
+    width: auto;
+    height: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+  
+input.placeholder {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+  
+
+button {
+    width: auto;
+    font-size: 16px;
+    margin: 2px;
+    padding: 10px;
+    color: black;
+    border-color: black;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#btn-start {
+    background-color: aquamarine;
+}
+
+#btn-start:hover{
+    background-color: aqua;
+}
+
+#btn-hit ,#btn-hold {
+    background-color: orange;
+}
+
+#btn-hit:hover, #btn-hold:hover{
+    background-color: yellow;
+}
+
+#btn-reset {
+    background-color: grey;
+}
+
+#btn-reset:hover{
+    background-color: lightslategray;
+}
+  
+
+
+
+
+

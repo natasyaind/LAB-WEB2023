@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>BlackJack</h1>
+    <h3>Wanna Play?</h3>
+
+    <container>
+      <div class = "card1">
+        <h3>Com Cards</h3>
+        <div class="bot-cards">
+          <img class="hidden-card" src="./images/cards/BACK.png" alt="" />
+        </div>
+        <h3>Com Sums : <span class="bot-sums"></span></h3>
+      </div>
+      <div class = "card2">
+        <h3>Your Cards</h3>
+        <div class="my-cards">
+          <img class="hidden-card" src="./images/cards/BACK.png" alt="">
+        </div>
+        <h3>Sums : <span class="my-sums"></span></h3>
+      </div>
+    </container>
+    <p id="result"></p>
+
+    <h3>Jumlah uang anda : Rp. <span id="my-money">5000</span></h3>
+    <br />
+    <input placeholder="Place your bet" type="number" min="0" oninput="validity.valid||(value='')" required />
+    <br />
+    <br />
+
+    <button id="btn-start"><strong>START GAME</strong></button>
+    <button id="btn-hit">Hit Card</button>
+    <button id="btn-hold">Hold Card</button>
+    <button id="btn-reset">Reset</button>
+
+    <script src="javascript.js"></script>
+
+    
+</body>
+</html>
